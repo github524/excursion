@@ -10,15 +10,20 @@
   <link rel="stylesheet" href="resources/css/style.css">
 
   <meta name="theme-color" content="#fafafa">
+  <script>
+      function playVideo() {
+          document.getElementById('vid').play()
+      }
+  </script>
 </head>
 
-<body>
+<body onpageshow="playVideo()">
 
 
     <h1>Discover hidden places in the world around you</h1>
     <a href="#">Download Excursion (Coming soon!)</a>
     <p>
-        <video type='video/mp4' src="resources/video/excursion.mp4" alt="Video of changing landscapes" autoplay loop>Your device does not support .mp4</video>
+        <video id="vid" type='video/mp4' src="resources/video/excursion.mp4" alt="Video of changing landscapes" autoplay loop>Your device does not support .mp4</video>
     </p>    
     <h3>Your personal travel guide</h3>
     <p>
